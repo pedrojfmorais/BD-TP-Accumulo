@@ -1,0 +1,141 @@
+{
+  "testClass": "org.apache.accumulo.testing.performance.tests.ScanFewFamiliesPT",
+  "accumuloVersion": "2.1.2",
+  "startTime": "2024-03-31T19:42:07.783332Z",
+  "finishTime": "2024-03-31T19:44:43.330220Z",
+  "id": "sfewfam",
+  "description": "This test times fetching a few column families when rows have many column families.",
+  "results": [
+    {
+      "id": "f01_stats",
+      "stats": {
+        "min": 84,
+        "max": 478,
+        "sum": 10549,
+        "average": 210.98,
+        "count": 50
+      },
+      "units": "MILLISECONDS",
+      "description": "Time to fetch 1 families from all rows",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "f01",
+      "data": 210.98,
+      "units": "MILLISECONDS",
+      "description": "Average time to fetch 1 families from all rows",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "f02_stats",
+      "stats": {
+        "min": 131,
+        "max": 587,
+        "sum": 15715,
+        "average": 314.3,
+        "count": 50
+      },
+      "units": "MILLISECONDS",
+      "description": "Time to fetch 2 families from all rows",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "f02",
+      "data": 314.3,
+      "units": "MILLISECONDS",
+      "description": "Average time to fetch 2 families from all rows",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "f04_stats",
+      "stats": {
+        "min": 153,
+        "max": 467,
+        "sum": 15331,
+        "average": 306.62,
+        "count": 50
+      },
+      "units": "MILLISECONDS",
+      "description": "Time to fetch 4 families from all rows",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "f04",
+      "data": 306.62,
+      "units": "MILLISECONDS",
+      "description": "Average time to fetch 4 families from all rows",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "f08_stats",
+      "stats": {
+        "min": 157,
+        "max": 638,
+        "sum": 19339,
+        "average": 386.78,
+        "count": 50
+      },
+      "units": "MILLISECONDS",
+      "description": "Time to fetch 8 families from all rows",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "f08",
+      "data": 386.78,
+      "units": "MILLISECONDS",
+      "description": "Average time to fetch 8 families from all rows",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "f16_stats",
+      "stats": {
+        "min": 326,
+        "max": 797,
+        "sum": 27040,
+        "average": 540.8,
+        "count": 50
+      },
+      "units": "MILLISECONDS",
+      "description": "Time to fetch 16 families from all rows",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "f16",
+      "data": 540.8,
+      "units": "MILLISECONDS",
+      "description": "Average time to fetch 16 families from all rows",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "write",
+      "data": 74940.0479616307,
+      "units": "entries/sec",
+      "description": "Data write rate",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "compact",
+      "data": 29505.48802077186,
+      "units": "entries/sec",
+      "description": "Compact rate",
+      "purpose": "INFORMATIONAL"
+    }
+  ],
+  "parameters": [
+    {
+      "id": "rows",
+      "data": "500",
+      "description": "Rows in test table"
+    },
+    {
+      "id": "families",
+      "data": "1000",
+      "description": "Families per row in test table"
+    },
+    {
+      "id": "qualifiers",
+      "data": "1",
+      "description": "Qualifiers per family in test table"
+    }
+  ]
+}

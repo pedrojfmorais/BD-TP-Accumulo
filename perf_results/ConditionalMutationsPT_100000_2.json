@@ -1,0 +1,90 @@
+{
+  "testClass": "org.apache.accumulo.testing.performance.tests.ConditionalMutationsPT",
+  "accumuloVersion": "2.1.2",
+  "startTime": "2024-03-30T15:36:47.728848Z",
+  "finishTime": "2024-03-30T15:43:21.668057Z",
+  "id": "Conditional Mutations",
+  "description": "Runs conditional mutations tests with and without randomization,setting of block size, and with and without randomization of batch writing/reading.",
+  "results": [
+    {
+      "id": "avgRate: 1-20",
+      "data": 23700.95,
+      "units": "conditions/sec",
+      "description": "ConditionalMutationsTest: average rate to run sequence 1-20",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "avgRate: 21-40",
+      "data": 27125.66,
+      "units": "conditions/sec",
+      "description": "ConditionalMutationsTest: average rate to run sequence 21-40",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "avgRate: 1-20",
+      "data": 36796.33,
+      "units": "conditions/sec",
+      "description": "RandomizeConditionalMutationsTest: average rate to run sequence 1-20",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "avgRate: 21-40",
+      "data": 33127.71,
+      "units": "conditions/sec",
+      "description": "RandomizeConditionalMutationsTest: average rate to run sequence 21-40",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "avgRate: 1-20",
+      "data": 43982.96,
+      "units": "conditions/sec",
+      "description": "RandomizeBatchScanAndWriteTest: average rate to write and scan sequence 1-20",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "avgRate: 21-40",
+      "data": 45339.75,
+      "units": "conditions/sec",
+      "description": "RandomizeBatchScanAndWriteTest: average rate to write and scan sequence 21-40 post flush",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "avgRate1",
+      "data": 12192.5,
+      "units": "conditions/sec",
+      "description": "SetBlockSizeTest: average rate",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "avgRate2",
+      "data": 10368.97,
+      "units": "conditions/sec",
+      "description": "SetBlockSizeTest: average rate post flush",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "avgRate3",
+      "data": 9768.4,
+      "units": "conditions/sec",
+      "description": "SetBlockSizeTest: average rate post compaction",
+      "purpose": "COMPARISON"
+    }
+  ],
+  "parameters": [
+    {
+      "id": "numRows",
+      "data": "100000",
+      "description": "SetBlockSizeTest: The number of rows"
+    },
+    {
+      "id": "numCols",
+      "data": "100",
+      "description": "SetBlockSizeTest: The number of columns"
+    },
+    {
+      "id": "numTest",
+      "data": "10",
+      "description": "SetBlockSizeTest: The number of tests ran per trial"
+    }
+  ]
+}

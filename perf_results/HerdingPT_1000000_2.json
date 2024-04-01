@@ -1,0 +1,39 @@
+{
+  "testClass": "org.apache.accumulo.testing.performance.tests.HerdingPT",
+  "accumuloVersion": "2.1.2",
+  "startTime": "2024-03-30T16:04:48.613331Z",
+  "finishTime": "2024-03-30T16:09:10.593935Z",
+  "id": "herdingPT",
+  "description": "Test herding performance with 32 threads attempting to simultaneously load the same block 1000 times.",
+  "results": [
+    {
+      "id": "herd_time",
+      "data": 150058,
+      "units": "MILLISECONDS",
+      "description": "The time it took herding to complete.",
+      "purpose": "COMPARISON"
+    }
+  ],
+  "parameters": [
+    {
+      "id": "table_name",
+      "data": "herd",
+      "description": "The name of the table."
+    },
+    {
+      "id": "num_threads",
+      "data": "32",
+      "description": "The number of threads."
+    },
+    {
+      "id": "num_load_attempts",
+      "data": "1000",
+      "description": "The number of times the threads will attempt to load the same block."
+    },
+    {
+      "id": "num_rows",
+      "data": "1000000",
+      "description": "The number of rows that will be loaded into the table."
+    }
+  ]
+}

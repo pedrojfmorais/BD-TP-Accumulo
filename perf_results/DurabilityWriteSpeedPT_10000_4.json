@@ -1,0 +1,185 @@
+{
+  "testClass": "org.apache.accumulo.testing.performance.tests.DurabilityWriteSpeedPT",
+  "accumuloVersion": "2.1.2",
+  "startTime": "2024-03-31T18:04:17.937109Z",
+  "finishTime": "2024-03-31T18:09:16.940166Z",
+  "id": "durability",
+  "description": "Compares writes speeds at different durability levels",
+  "results": [
+    {
+      "id": "sync attempt 0",
+      "data": 31707,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "sync attempt 1",
+      "data": 16835,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "sync attempt 2",
+      "data": 17596,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "sync attempt 3",
+      "data": 16704,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "sync attempt 4",
+      "data": 16090,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "sync Median",
+      "data": 16835,
+      "units": "MILLISECONDS",
+      "description": "Median time result for sync",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "flush attempt 0",
+      "data": 9302,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "flush attempt 1",
+      "data": 4230,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "flush attempt 2",
+      "data": 8131,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "flush attempt 3",
+      "data": 8607,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "flush attempt 4",
+      "data": 8849,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "flush Median",
+      "data": 8607,
+      "units": "MILLISECONDS",
+      "description": "Median time result for flush",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "log attempt 0",
+      "data": 7902,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "log attempt 1",
+      "data": 6239,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "log attempt 2",
+      "data": 6094,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "log attempt 3",
+      "data": 5043,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "log attempt 4",
+      "data": 6164,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "log Median",
+      "data": 6164,
+      "units": "MILLISECONDS",
+      "description": "Median time result for log",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "none attempt 0",
+      "data": 8040,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "none attempt 1",
+      "data": 4765,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "none attempt 2",
+      "data": 6112,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "none attempt 3",
+      "data": 5028,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "none attempt 4",
+      "data": 4559,
+      "units": "MILLISECONDS",
+      "description": "Times for each attempt",
+      "purpose": "INFORMATIONAL"
+    },
+    {
+      "id": "none Median",
+      "data": 5028,
+      "units": "MILLISECONDS",
+      "description": "Median time result for none",
+      "purpose": "COMPARISON"
+    }
+  ],
+  "parameters": [
+    {
+      "id": "rows",
+      "data": "10000",
+      "description": "Number of random rows written."
+    }
+  ]
+}

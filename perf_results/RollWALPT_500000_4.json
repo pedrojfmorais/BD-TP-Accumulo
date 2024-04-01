@@ -1,0 +1,61 @@
+{
+  "testClass": "org.apache.accumulo.testing.performance.tests.RollWALPT",
+  "accumuloVersion": "2.1.2",
+  "startTime": "2024-03-31T18:38:55.339681Z",
+  "finishTime": "2024-03-31T18:41:54.517662Z",
+  "id": "rollWAL",
+  "description": "Evaluate the performance of ingesting a large number of entries across numerous splits given both a small and large maximum WAL size.",
+  "results": [
+    {
+      "id": "small_wal_write_time",
+      "data": 14572332165,
+      "units": "NANOSECONDS",
+      "description": "The time taken to write entries to the table with a small WAL of 5M",
+      "purpose": "COMPARISON"
+    },
+    {
+      "id": "large_wal_write_time",
+      "data": 13422836094,
+      "units": "NANOSECONDS",
+      "description": "The time taken to write entries to the table with a large WAL of 1G",
+      "purpose": "COMPARISON"
+    }
+  ],
+  "parameters": [
+    {
+      "id": "small_wal_table",
+      "data": "SmallRollWAL",
+      "description": "The name of the table used for evaluating performance with a small WAL."
+    },
+    {
+      "id": "large_wal_table",
+      "data": "LargeRollWAL",
+      "description": "The name of the table used for evaluating performance with a large WAL."
+    },
+    {
+      "id": "num_splits",
+      "data": "100",
+      "description": "The number of splits that will be added to the tables."
+    },
+    {
+      "id": "split_distance",
+      "data": "92233720368547758",
+      "description": "The distance between each split."
+    },
+    {
+      "id": "num_entries",
+      "data": "500000",
+      "description": "The number of entries that will be written to the tables."
+    },
+    {
+      "id": "small_wal_size",
+      "data": "5M",
+      "description": "The size of the small WAL used to force many rollovers."
+    },
+    {
+      "id": "large_wal_size",
+      "data": "1G",
+      "description": "The size of the large WAL used to avoid many rollovers"
+    }
+  ]
+}
