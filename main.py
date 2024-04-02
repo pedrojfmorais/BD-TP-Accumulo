@@ -103,7 +103,7 @@ def average_benchmark_results(_filenames):
 
 
 folder_path = "perf_results"
-filename_start = "ConditionalMutationsPT_10000_"
+filename_start = "ConditionalMutationsPT_1000_"
 
 filenames = list_files(filename_start)
 results = average_benchmark_results(filenames)
